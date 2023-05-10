@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Register">
+   <children>
+      <BorderPane layoutY="1.0" prefHeight="628.0" prefWidth="783.0">
+         <left>
+            <AnchorPane prefHeight="601.0" prefWidth="418.0" style="-fx-background-color: #2874A6;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="109.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@download.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane fx:id="submit_button" prefHeight="628.0" prefWidth="392.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="23.0" layoutY="285.0" text="Password" />
+                  <ImageView fitHeight="150.0" fitWidth="169.0" layoutX="178.0" layoutY="34.0" onMouseClicked="#uploadImage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageHolder.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="submit_input" layoutX="276.0" layoutY="573.0" mnemonicParsing="false" onAction="#createProfile" style="-fx-background-color: #7F8C8D;" text="Submit" textFill="#2f2a2a">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="name_input" layoutX="23.0" layoutY="34.0" promptText="Name" />
+                  <TextField fx:id="surname_input" layoutX="23.0" layoutY="66.0" promptText="Surname" />
+                  <TextField fx:id="age_input" layoutX="23.0" layoutY="167.0" promptText="Age" />
+                  <TextField fx:id="gender_input" layoutX="23.0" layoutY="133.0" promptText="Gender" />
+                  <TextField fx:id="email_input" layoutX="23.0" layoutY="101.0" promptText="Email" />
+                  <TextField fx:id="height_input" layoutX="23.0" layoutY="200.0" promptText="Height" />
+                  <TextField fx:id="weight_input" layoutX="23.0" layoutY="236.0" promptText="Weight" />
+                  <TextField fx:id="sitUp_input" layoutX="23.0" layoutY="386.0" promptText="Sit-ups in 60s" />
+                  <TextField fx:id="pushUp_input" layoutX="23.0" layoutY="420.0" promptText="Push-ups in 60s" />
+                  <TextField fx:id="cooperTest_input" layoutX="23.0" layoutY="455.0" prefHeight="25.0" prefWidth="231.0" promptText="Best possible distance covered in 12 min" />
+                  <TextField fx:id="gymFrequency_input" layoutX="23.0" layoutY="492.0" prefHeight="25.0" prefWidth="282.0" promptText="How many ttimes do you go to the gym in a week?" />
+                  <Label fx:id="password_Label" layoutX="178.0" layoutY="331.0" text="password_Notify" textFill="#f5f5f5" />
+                  <PasswordField fx:id="create_password_input" layoutX="23.0" layoutY="319.0" promptText="Create Password" />
+                  <PasswordField fx:id="confirm_password_input" layoutX="23.0" layoutY="348.0" promptText="Confirm password" />
+                  <CheckBox fx:id="showPassword_checkBox" layoutX="172.0" layoutY="294.0" mnemonicParsing="false" text="Show password" />
+                  <Label fx:id="notifyUser" layoutX="196.0" layoutY="204.0" text="Label" textFill="WHITESMOKE" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
